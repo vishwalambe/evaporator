@@ -11,9 +11,17 @@ public class EvaporatorController {
 	@Value("${application.info}")
 	private String appInfo;
 	
+	@Value("${configuration.info}")
+	private String confInfo;
+	
 	@GetMapping(value = "/appInfo")
 	public String getAppInfo() {
 		return appInfo;
+	}
+	
+	@GetMapping(value = "/confInfo")
+	public String getConfigurationInfo() {
+		return confInfo;
 	}
 	
 }
