@@ -16,7 +16,7 @@ public class EvaporatorController {
 	
 	@GetMapping(value = "/appInfo")
 	public String getAppInfo() {
-		return appInfo+" while demo from WINIT";
+		return appInfo+" while demo from WINIT demo to sandip";
 	}
 	
 	@GetMapping(value = "/confInfo")
